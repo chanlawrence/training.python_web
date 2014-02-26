@@ -61,7 +61,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/Users/nclegg/Desktop/Session08/training.python_web/resources/session08/mysite/myblog/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -111,7 +111,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/cewing/projects/training/uw_pce/testme/training.python_web/resources/session08/mysite/mysite/templates'
+    '/Users/nclegg/Desktop/Session08/training.python_web/resources/session08/mysite/mysite/templates'
 )
 
 INSTALLED_APPS = (
@@ -126,7 +126,10 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'myblog',
+    'ckeditor',
 )
+
+CKEDITOR_UPLOAD_PATH = "/Users/nclegg/Desktop/Session08/training.python_web/resources/session08/mysite/myblog/static/uploads"
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
